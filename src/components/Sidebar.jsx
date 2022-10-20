@@ -20,7 +20,7 @@ export default function Sidebar() {
         <div className='top'>
             <div className='brand'>
                 <FaTaxi />
-                <span>Elliotts Autos</span>
+                <span>ET Dashboard</span>
 
             </div>
             <div className='toggle'></div>
@@ -81,7 +81,7 @@ export default function Sidebar() {
 const Section = styled.section`
 position: fixed;
 left: 0;
-background-color: grey;
+background-color: #212121;
 height: 100vh;
 width: 18vw;
 display: flex;
@@ -107,14 +107,12 @@ gap: 2rem;
         svg {
             color: #ffc107;
             font-size: 2rem;
-
         }
 
         span {
             font-size: 1.3rem;
             color: #ffc107;
             font-family: "Permanent Marker"
-
         }
         
     }.links {

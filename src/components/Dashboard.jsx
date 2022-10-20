@@ -35,4 +35,28 @@ export default function Dashboard() {
 }
 
 
-const Section = styled.section``
+const Section = styled.section`
+margin-left: 18vw;
+padding: 2rem;
+height: 100%;
+.grid {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 1rem;
+  margin-top: 2rem;
+  .row_one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50%;
+    gap: 1rem;
+    background-color: red;
+  }
+  .row_two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50%;
+    gap: 1rem;
+    background-color: red;
+  }
+}`
