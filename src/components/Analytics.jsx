@@ -90,6 +90,20 @@ gap: 1rem;
   &:hover {
     background-color: #ffc107;
     color: black;
+    svg {
+      color: white;
+    }
+  }
+
+  .logo {
+    background-color: black;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    svg {
+      font-size: 1.5rem;
+    }
   }
 }`
 
