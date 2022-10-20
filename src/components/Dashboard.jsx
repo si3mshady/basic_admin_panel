@@ -50,7 +50,7 @@ height: 100%;
     grid-template-columns: repeat(2, 1fr);
     height: 50%;
     gap: 1rem;
-    background-color: red;
+    background-color: inherit;
   }
   .row_two {
     display: grid;
