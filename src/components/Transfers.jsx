@@ -15,13 +15,13 @@ export default function Transfers() {
     },
     {
       image: avatarImage,
-      name: "To Lamar Arnold",
+      name: "To Lam Arnold",
       time: "Today, 08:49",
       amount: "-$25",
     },
     {
       image: avatarImage,
-      name: "From Arnold Lamar",
+      name: "From Arn Lamar",
       time: "Yesterday, 14:36",
       amount: "+$150",
     }]
@@ -116,8 +116,14 @@ gap: 1rem;
       }
 
       &__details {
-        font-size: .7rem;
-       
+        font-size: 1rem;
+        ${'' /* font-size: .9rem;
+        f
+
+        h3 {
+          margin-bottom: .4rem;
+        }
+        */}
         }
 
 
@@ -134,7 +140,7 @@ gap: 1rem;
       border-radius: 1rem;
       text-align: center;
 
-      margin-left: 1.8rem;
+      margin-left: 2.8rem;
       
       transition: .3s ease-in-out;
       &:hover {
@@ -164,6 +170,17 @@ gap: 1rem;
     color: #ffc107;
     font-weight: bold;
     margin-top: 1rem;
+
+    svg {
+      transition: .3s ease-in-out;
+      font-size: 1.4rem;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(.5rem);
+      }
+    }
       
     }
 }`
