@@ -23,8 +23,9 @@ export default function Dashboard() {
         <div className='row_two'>
 
         <Earnings />
-        <Profile />
+      
         <Transfers />
+        <Profile />
 
         </div>
 

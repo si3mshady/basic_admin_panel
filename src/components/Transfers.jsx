@@ -15,13 +15,13 @@ export default function Transfers() {
     },
     {
       image: avatarImage,
-      name: "To Lamar Arnold.",
+      name: "To Lamar Arnold",
       time: "Today, 08:49",
       amount: "-$25",
     },
     {
       image: avatarImage,
-      name: "From Arnold Lamar.",
+      name: "From Arnold Lamar",
       time: "Yesterday, 14:36",
       amount: "+$150",
     }]
@@ -40,7 +40,8 @@ export default function Transfers() {
 
               <div className="transaction__title">
                   <div className="transaction__title__image">
-                  <img src={tx.image} alt="tx image" />
+                     <img src={tx.image} alt="tx image" />
+                  </div>
 
                   <div className="transaction__title__details">
                       <h3>{tx.name}</h3>
@@ -50,7 +51,7 @@ export default function Transfers() {
 
              
 
-              </div>
+          
                <div className="transaction__amount">
 
                 <span>{tx.amount}</span>
@@ -61,8 +62,8 @@ export default function Transfers() {
            })}
         </div>
 
-        <a className="view" > 
-        View All <HiArrowNarrowRight />
+        <a href="#" className="view" > 
+           View All <HiArrowNarrowRight />
         </a>
       </Section>
     )
@@ -93,9 +94,10 @@ gap: 1rem;
   flex-direction: column;
   gap: 1rem;
   margin-top: 1rem;
+  
   .transaction {
+  
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     &__title {
@@ -113,7 +115,56 @@ gap: 1rem;
         }
       }
 
+      &__details {
+        font-size: .7rem;
+       
+        }
+
+
+     
+
     }
+
+    &__amount {
+      justify-content: flex-end;
+
+      background-color: #d7e41e1d;
+      padding: .2rem .5rem;
+      width: 4rem;
+      border-radius: 1rem;
+      text-align: center;
+
+      margin-left: 1.8rem;
+      
+      transition: .3s ease-in-out;
+      &:hover {
+        background-color: #ffc107;
+        span {
+          color: black;
+        }
+      }
+
+      span {
+        color: #ffc107;
+      }
+
+    }
+
+     
+    }
+
+  
   }
+  .view {
+      width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    color: #ffc107;
+    font-weight: bold;
+    margin-top: 1rem;
+      
+    }
 }`
 
