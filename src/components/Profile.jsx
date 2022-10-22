@@ -1,12 +1,14 @@
 
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import avatarImage from "../assets/ea.jpeg";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { cardStyle } from "./reusableStyles";
 
 export default function Profile() {
+
   return (
+    <>
     <Section>
 
     <div className="image">
@@ -44,6 +46,8 @@ export default function Profile() {
     </div>
     
     </Section>
+    
+    </>
   )
 }
 
@@ -94,3 +98,4 @@ gap: 1rem;
   text-align: center;
 }
 `
+

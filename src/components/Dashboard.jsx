@@ -60,4 +60,15 @@ height: 100%;
     gap: 1rem;
     background-color: black;
   }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px {
+    margin-left: 0;
+   
+    .grid {
+      .row_one,
+      .row_two {
+        grid-template-columns: 1fr;
+      }
+    }
+  })
 }`

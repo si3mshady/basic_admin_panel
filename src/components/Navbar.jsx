@@ -52,13 +52,33 @@ color: white;
       background-color: transparent;
       border: none;
       color: #ffc107;
-      &::placeholder {
-        color:  #ffc107;
-        letter-spacing: .3rem;
-        font-family: "Permanent Marker"
-      }
-    &:focus {
+      letter-spacing: .3rem;
+      &:focus {
       outline: none;
     }
+
+      &::placeholder {
+        color:  #ffc107;
+       
+        font-family: "Permanent Marker";
+      }
+   
+    
     }
-  }`
+}
+
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+    flex-direction: column;
+    .title {
+      
+      h1 {
+        span {
+          display: block;
+          margin: 1rem 0;
+         
+          /* letter-spacing: 0; */
+        }
+      }
+    }
+    }
+  `
