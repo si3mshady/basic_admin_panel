@@ -109,6 +109,7 @@ gap: 1rem;
 
 
       &__image {
+        
         img {
           height: 2.5rem;
         border-radius: 3rem;

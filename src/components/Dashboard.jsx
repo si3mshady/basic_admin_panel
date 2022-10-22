@@ -58,6 +58,6 @@ height: 100%;
     grid-template-columns: repeat(3, 1fr);
     height: 50%;
     gap: 1rem;
-    background-color: red;
+    background-color: black;
   }
 }`
