@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import Navbar from './Navbar'
 import Analytics from './Analytics'
@@ -6,8 +6,29 @@ import FAQ from './FAQ'
 import Earnings from './Earnings'
 import Profile from './Profile'
 import Transfers from './Transfers'
+import scrollreveal from 'scrollreveal'
+
 
 export default function Dashboard() {
+  useEffect(() => {
+    const sr = scrollreveal({
+        origin: "bottom",
+        distance: "80px",
+        duration: 2500,
+        reset: false
+    })
+
+    sr.reveal(`
+    
+    .row_one,
+    .row_two
+    `,
+    {
+        opacity:0,
+        interval: 300
+
+    })
+})
   return (
     <Section>
     <Navbar />
