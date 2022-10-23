@@ -231,4 +231,15 @@ padding: 2rem 0 0 0;
     .recharts-default-tooltip {
         background-color: black !important;
     }
+
+
+
+    @media  (max-width: 500px) {
+      .chart {
+    
+        .recharts-responsive-container {
+          width: 10% important!;
+        }
+
+    }
 }`

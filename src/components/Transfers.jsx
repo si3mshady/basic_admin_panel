@@ -184,5 +184,20 @@ gap: 1rem;
     }
       
     }
+
+
+    @media  (max-width: 500px) {
+
+      .transactions {
+
+        .transaction {
+
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+   
+    }
 }`
 
