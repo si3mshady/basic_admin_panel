@@ -49,6 +49,7 @@ height: 100%;
   .row_one {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+   
     height: 50%;
     gap: 1rem;
     background-color: inherit;
@@ -61,14 +62,22 @@ height: 100%;
     background-color: black;
   }
 
-  @media screen and (min-width: 280px) and (max-width: 1080px {
+ 
+  }
+  
+  @media  (max-width: 700px) {
     margin-left: 0;
    
     .grid {
-      .row_one,
+      
+      .row_one {
+        grid-template-columns: 1fr;
+      }
       .row_two {
         grid-template-columns: 1fr;
       }
+      
+      }
     }
-  })
+  ) 
 }`

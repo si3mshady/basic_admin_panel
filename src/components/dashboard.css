@@ -1,0 +1,12 @@
+@media (max-width: 500px) {
+  
+   .row_one, .row_two {
+
+       
+    grid-template-columns: 1fr;
+
+    background-color: orange;
+       
+  }
+
+}

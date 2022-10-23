@@ -83,4 +83,10 @@ ${cardStyle}
                 padding: 0.8rem 0;
             }
         }
+
+        @media screen and (min-width: 280px) and (max-width: 1080px) {
+    svg {
+      font-size: 2rem !important;
+    }
+  }
     }`
